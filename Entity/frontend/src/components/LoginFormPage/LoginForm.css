@@ -15,7 +15,7 @@ body {
     overflow: hidden;
 }
 
-form {
+.login-form {
     display: flex;
     flex-direction: column;
     width: 150px;
@@ -26,7 +26,7 @@ form {
     position: relative;
 }
 
-input {
+.login-form>input {
     background: none;
     border: none;
     border-bottom: 1px solid white;
