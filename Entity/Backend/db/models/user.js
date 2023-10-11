@@ -39,6 +39,20 @@ module.exports = (sequelize, DataTypes) => {
     }
     static associate(models) {
       // define association here
+      User.belongsToMany(
+        models.User, {
+        through: models.Follow,
+        as: 'followers',
+        foreignKey: 'user_id_followee'
+      }
+      )
+      User.belongsToMany(
+        models.User, {
+        through: models.Follow,
+        as: 'following',
+        foreignKey: 'user_id_follower'
+      }
+      )
     }
   };
 
