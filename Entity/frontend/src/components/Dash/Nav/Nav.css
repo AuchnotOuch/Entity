@@ -1,0 +1,23 @@
+.container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.bottom-nav-container {
+    border: 1px solid red;
+    width: 500px;
+    height: 100px;
+    position: absolute;
+    bottom: 75px;
+}
+
+#bottom-nav-button {
+    background: none;
+    border: none;
+    position: absolute;
+    bottom: 30px;
+    font-size: xx-large;
+    color: rgb(85, 85, 85);
+    cursor: pointer;
+}
