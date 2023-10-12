@@ -5,11 +5,13 @@
 }
 
 .bottom-nav-container {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 500px;
     height: 100px;
     position: absolute;
     bottom: 75px;
+    display: flex;
+    justify-content: space-between;
 }
 
 #bottom-nav-button {
@@ -20,4 +22,11 @@
     font-size: xx-large;
     color: rgb(85, 85, 85);
     cursor: pointer;
+}
+
+button {
+    background: none;
+    border: none;
+    color: rgb(85, 85, 85);
+    font-size: xx-large;
 }
