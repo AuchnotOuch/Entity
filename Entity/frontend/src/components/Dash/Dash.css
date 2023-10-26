@@ -1,4 +1,4 @@
-/* body {
+body {
     min-height: 100vh;
     min-width: 100vw;
     display: flex;
@@ -8,7 +8,7 @@
     background: rgb(0, 0, 0);
     overflow: hidden;
     margin: 0;
-} */
+}
 
 .frame {
     display: flex;

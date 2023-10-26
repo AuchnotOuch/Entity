@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 import './Nav.css'
 import BottomNav from './BottonNav';
 import LeftNav from './LeftNav';
+import RightNav from './RightNav';
 
 function Nav() {
 
@@ -15,7 +16,9 @@ function Nav() {
             <div className='bottom-container'>
                 <BottomNav />
             </div>
-            <div className='right-container'></div>
+            <div className='right-container'>
+                <RightNav />
+            </div>
         </div>
     )
 }

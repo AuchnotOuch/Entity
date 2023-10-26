@@ -15,6 +15,11 @@
     flex-direction: column;
 }
 
+.right-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .bottom-nav-container {
     /* border: 1px solid red; */
     width: 500px;
@@ -37,6 +42,18 @@
     justify-content: space-between;
 }
 
+.right-nav-container {
+    width: 100px;
+    height: 350px;
+    position: absolute;
+    /* border: 1px solid red; */
+    top: 25%;
+    right: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 #bottom-nav-button {
     background: none;
     border: none;
@@ -51,6 +68,17 @@
     border: none;
     position: absolute;
     left: 30px;
+    bottom: 50%;
+    font-size: xx-large;
+    color: rgb(85, 85, 85);
+    cursor: pointer;
+}
+
+#right-nav-button {
+    background: none;
+    border: none;
+    position: absolute;
+    right: 30px;
     bottom: 50%;
     font-size: xx-large;
     color: rgb(85, 85, 85);
