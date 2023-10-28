@@ -14,7 +14,13 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   Institution.init({
-    name: DataTypes.STRING
+    name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        len: [1, 256]
+      }
+    }
   }, {
     sequelize,
     modelName: 'Institution',

@@ -1,6 +1,6 @@
 'use strict';
 const bcrypt = require("bcryptjs")
-
+const faker = require("faker")
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
@@ -13,23 +13,24 @@ module.exports = {
      *   isBetaMember: false
      * }], {});
     */
-    await queryInterface.bulkInsert('Users', [
-      {
-        email: 'demo@user.io',
-        username: 'Demo-lition',
-        hashedPassword: bcrypt.hashSync('password')
-      },
-      {
-        email: 'user1@user.io',
-        username: 'FakeUser1',
-        hashedPassword: bcrypt.hashSync('password2')
-      },
-      {
-        email: 'user2@user.io',
-        username: 'FakeUser2',
-        hashedPassword: bcrypt.hashSync('password3')
-      }
-    ], {})
+
+    // Generate an array of 3134 unique users
+    const usersData = Array.from({ length: 334 }).map((_, index) => {
+      const firstName = faker.name.firstName();
+      const lastName = `${faker.name.lastName()}${index}`;
+      const username = `${firstName}.${lastName}`;
+      const email = `${username}@example.com`;
+
+      return {
+        username,
+        email,
+        firstName,
+        lastName,
+        hashedPassword: bcrypt.hashSync(faker.internet.password()),
+      };
+    });
+
+    await queryInterface.bulkInsert('Users', usersData, {})
   },
 
   async down(queryInterface, Sequelize) {
@@ -39,9 +40,6 @@ module.exports = {
      * Example:
      * await queryInterface.bulkDelete('People', null, {});
      */
-    const Op = Sequelize.Op
-    await queryInterface.bulkDelete('Users', {
-      username: { [Op.in]: ['Demo-lition', 'FakeUser1', 'FakeUser2'] }
-    }, {})
+    await queryInterface.bulkDelete('Users', null, {})
   }
 };
