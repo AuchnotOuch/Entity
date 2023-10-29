@@ -15,17 +15,26 @@ module.exports = {
 
 
     await queryInterface.bulkInsert('Institutions', [
+
       {
-        name: "Harvard"
+        id: 1,
+        name: "Harvard",
+        owner_id: 1
       },
       {
-        name: "UTSA"
+        id: 2,
+        name: "UTSA",
+        owner_id: 2
       },
       {
-        name: "Stanford"
+        id: 3,
+        name: "Stanford",
+        owner_id: 3
       },
       {
-        name: 'University of Washington'
+        id: 4,
+        name: 'University of Washington',
+        owner_id: 4
       }
     ], {})
   },
