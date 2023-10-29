@@ -19,7 +19,7 @@ module.exports = (sequelize, DataTypes) => {
           as: 'institution'
         }
       )
-      Membership.belongsTo(
+      Enrollment.belongsTo(
         models.User,
         {
           onDelete: 'CASCADE',
