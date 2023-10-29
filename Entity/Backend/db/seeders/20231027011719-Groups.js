@@ -16,295 +16,392 @@ module.exports = {
 
 
       {
-        name: "African and African American Studies"
+        name: "African and African American Studies",
+        owner_id: 1
       },
       {
-        name: "Anthropology"
+        name: "Anthropology",
+        owner_id: 2
       },
       {
-        name: "Art, Film, Visual Studies"
+        name: "Art, Film, Visual Studies",
+        owner_id: 3
       },
       {
-        name: "Astrophysics"
+        name: "Astrophysics",
+        owner_id: 4
       },
       {
-        name: "Bioengineering"
+        name: "Bioengineering",
+        owner_id: 5,
       },
       {
-        name: "Porcellian Club"
+        name: "Porcellian Club",
+        owner_id: 6
       },
       {
-        name: "Biology"
+        name: "Biology",
+        owner_id: 7
       },
       {
-        name: "Biomedical Engineering"
+        name: "Biomedical Engineering",
+        owner_id: 8
       },
       {
         name: "Business Administration and Management",
+        owner_id: 9
       },
       {
-        name: "Chemical and Physical Biology"
+        name: "Chemical and Physical Biology",
+        owner_id: 10
       },
       {
-        name: "Chemistry"
+        name: "Chemistry",
+        owner_id: 11
       },
       {
-        name: "Chemistry and Physics"
+        name: "Chemistry and Physics",
+        owner_id: 12
       },
       {
-        name: "Classics"
+        name: "Classics",
+        owner_id: 13
       },
       {
-        name: "Comparative Literature"
+        name: "Comparative Literature",
+        owner_id: 14
       },
       {
-        name: "Comparative Study of Religion"
+        name: "Comparative Study of Religion",
+        owner_id: 15
       },
       {
-        name: ""
+        name: "???",
+        owner_id: 16
       },
       {
-        name: "Computer Science"
+        name: "Computer Science",
+        owner_id: 17
       },
       {
-        name: "Earth and Planetary Sciences"
+        name: "Earth and Planetary Sciences",
+        owner_id: 17
       },
       {
-        name: "East Asian Studies"
+        name: "East Asian Studies",
+        owner_id: 18
       },
       {
-        name: "Economics"
+        name: "Economics",
+        owner_id: 19
       },
       {
-        name: "Electrical Engineering"
+        name: "Electrical Engineering",
+        owner_id: 20
       },
       {
-        name: "English"
+        name: "English",
+        owner_id: 21
       },
       {
-        name: "Environmental Science and Engineering"
+        name: "Environmental Science and Engineering",
+        owner_id: 22
       },
       {
-        name: "Astronomy Club"
+        name: "Astronomy Club",
+        owner_id: 23
       },
       {
-        name: "Film Society"
+        name: "Film Society",
+        owner_id: 24
       },
       {
-        name: "LGBTQ+ Alliance"
+        name: "LGBTQ+ Alliance",
+        owner_id: 25
       },
       {
-        name: "Philosophy Club"
+        name: "Philosophy Club",
+        owner_id: 26
       },
       {
-        name: "Sports Management Club"
+        name: "Sports Management Club",
+        owner_id: 27
       },
       {
-        name: "Archaeology Society"
+        name: "Archaeology Society",
+        owner_id: 28,
       },
       {
-        name: "Business Club"
+        name: "Business Club",
+        owner_id: 29
       },
       {
-        name: "Women in STEM"
+        name: "Women in STEM",
+        owner_id: 30
       },
       {
-        name: "Journalism Club"
+        name: "Journalism Club",
+        owner_id: 31
       },
       {
-        name: "A Cappella Group"
+        name: "A Cappella Group",
+        owner_id: 32
       },
       {
-        name: "Meditation & Yoga Club"
+        name: "Meditation & Yoga Club",
+        owner_id: 33
       },
       {
-        name: "International Students Association"
+        name: "International Students Association",
+        owner_id: 34
       },
       {
-        name: "Outdoor Adventure Club"
+        name: "Outdoor Adventure Club",
+        owner_id: 35
       },
       {
-        name: "Gaming Club"
+        name: "Gaming Club",
+        owner_id: 36
       },
       {
-        name: "Culinary Arts Club"
+        name: "Culinary Arts Club",
+        owner_id: 37
       },
       {
-        name: "Astronomy Club"
+        name: "Astronomy Club",
+        owner_id: 38
       },
       {
-        name: "Film Society"
+        name: "Film Society",
+        owner_id: 39
       },
       {
-        name: "LGBTQ+ Alliance"
+        name: "LGBTQ+ Alliance",
+        owner_id: 40
       },
       {
-        name: "Philosophy Club"
+        name: "Philosophy Club",
+        owner_id: 41
       },
       {
-        name: "Sports Management Club"
+        name: "Sports Management Club",
+        owner_id: 42
       },
       {
-        name: "Archaeology Society"
+        name: "Archaeology Society",
+        owner_id: 43
       },
       {
-        name: "Business Club"
+        name: "Business Club",
+        owner_id: 44
       },
       {
-        name: "Women in STEM"
+        name: "Women in STEM",
+        owner_id: 45
       },
       {
-        name: "Journalism Club"
+        name: "Journalism Club",
+        owner_id: 46
       },
       {
-        name: "A Cappella Group"
+        name: "A Cappella Group",
+        owner_id: 47
       },
       {
-        name: "Meditation & Yoga Club"
+        name: "Meditation & Yoga Club",
+        owner_id: 48
       },
       {
-        name: "International Students Association"
+        name: "International Students Association",
+        owner_id: 49
       },
       {
-        name: "Outdoor Adventure Club"
+        name: "Outdoor Adventure Club",
+        owner_id: 50
       },
       {
-        name: "Gaming Club"
+        name: "Gaming Club",
+        owner_id: 51
       },
       {
-        name: "Culinary Arts Club"
+        name: "Culinary Arts Club",
+        owner_id: 52
       },
       {
-        name: "Debate Club"
+        name: "Debate Club",
+        owner_id: 53
       },
       {
-        name: "Math Club"
+        name: "Math Club",
+        owner_id: 54
       },
       {
-        name: "Student Body Council"
+        name: "Student Body Council",
+        owner_id: 55
       },
       {
-        name: "Chess Club"
+        name: "Chess Club",
+        owner_id: 56
       },
       {
-        name: "Drama Society"
+        name: "Drama Society",
+        owner_id: 57
       },
       {
-        name: "Literature Club"
+        name: "Literature Club",
+        owner_id: 58
       },
       {
-        name: "Science Club"
+        name: "Science Club",
+        owner_id: 59
       },
       {
-        name: "Robotics Team"
+        name: "Robotics Team",
+        owner_id: 60
       },
       {
-        name: "Model United Nations"
+        name: "Model United Nations",
+        owner_id: 61
       },
       {
-        name: "Dance Troupe"
+        name: "Dance Troupe",
+        owner_id: 62
       },
       {
-        name: "Music Band"
+        name: "Music Band",
+        owner_id: 63
       },
       {
-        name: "Photography Club"
+        name: "Photography Club",
+        owner_id: 64
       },
       {
-        name: "Environmental Club"
+        name: "Environmental Club",
+        owner_id: 65
       },
       {
-        name: "Entrepreneurship Club"
+        name: "Entrepreneurship Club",
+        owner_id: 66
       },
       {
-        name: "Anime Club"
+        name: "Anime Club",
+        owner_id: 67
       },
       {
-        name: "Coding Club"
+        name: "Coding Club",
+        owner_id: 68
       },
       {
-        name: "Art Society"
+        name: "Art Society",
+        owner_id: 69
       },
       {
-        name: "History Club"
+        name: "History Club",
+        owner_id: 70
       },
       {
-        name: "Language & Culture Club"
+        name: "Language & Culture Club",
+        owner_id: 71
       },
       {
-        name: "Volunteer & Outreach Group"
+        name: "Volunteer & Outreach Group",
+        owner_id: 72
       },
       {
-        name: "Mathematics"
+        name: "Mathematics",
+        owner_id: 73
       },
       {
-        name: "History"
+        name: "History",
+        owner_id: 74
       },
       {
-        name: "Psychology"
+        name: "Psychology",
+        owner_id: 75
       },
       {
-        name: "Sociology"
+        name: "Sociology",
+        owner_id: 76
       },
       {
-        name: "Philosophy"
+        name: "Philosophy",
+        owner_id: 77
       },
       {
-        name: "Political Science"
+        name: "Political Science",
+        owner_id: 78
       },
       {
-        name: "Literature"
+        name: "Literature",
+        owner_id: 79
       },
       {
-        name: "Environmental Science"
+        name: "Environmental Science",
+        owner_id: 80
       },
       {
-        name: "Geography"
+        name: "Geography",
+        owner_id: 81
       },
       {
-        name: "Anthropology"
+        name: "Anthropology",
+        owner_id: 82
       },
       {
-        name: "Economics"
+        name: "Economics",
+        owner_id: 83
       },
       {
-        name: "Business Administration"
+        name: "Business Administration",
+        owner_id: 84
       },
       {
-        name: "Music"
+        name: "Music",
+        owner_id: 85
       },
       {
-        name: "Theater Arts"
+        name: "Theater Arts",
+        owner_id: 86
       },
       {
-        name: "Fine Arts"
+        name: "Fine Arts",
+        owner_id: 87
       },
       {
-        name: "Architecture"
+        name: "Architecture",
+        owner_id: 88
       },
       {
-        name: "Civil Engineering"
+        name: "Civil Engineering",
+        owner_id: 89
       },
       {
-        name: "Mechanical Engineering"
+        name: "Mechanical Engineering",
+        owner_id: 90
       },
       {
-        name: "Electrical Engineering"
+        name: "Electrical Engineering",
+        owner_id: 91
       },
       {
-        name: "Nursing"
+        name: "Nursing",
+        owner_id: 92
       },
       {
-        name: "Medicine"
+        name: "Medicine",
+        owner_id: 93
       },
       {
-        name: "Law"
+        name: "Law",
+        owner_id: 94
       },
       {
-        name: "Journalism"
+        name: "Journalism",
+        owner_id: 95
       },
       {
-        name: "Education"
+        name: "Education",
+        owner_id: 96
       }
 
     ]

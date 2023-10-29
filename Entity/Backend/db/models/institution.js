@@ -20,6 +20,12 @@ module.exports = (sequelize, DataTypes) => {
       validate: {
         len: [1, 256]
       }
+    },
+    owner_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'Users'
+      }
     }
   }, {
     sequelize,
