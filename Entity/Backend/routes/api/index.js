@@ -5,6 +5,7 @@ const institutionsRouter = require("./institutions.js")
 const groupsRouter = require('./groups.js')
 const communitiesRouter = require('./communities.js')
 const membershipsRouter = require('./memberships.js')
+const enrollmentsROuter = require('./enrollments.js')
 const { restoreUser } = require('../../utils/auth.js')
 
 router.use(restoreUser)
@@ -20,5 +21,7 @@ router.use('/groups', groupsRouter)
 router.use('/communities', communitiesRouter)
 
 router.use('/memberships', membershipsRouter)
+
+router.use('/enrollments', enrollmentsROuter)
 
 module.exports = router;
