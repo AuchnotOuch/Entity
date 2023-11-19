@@ -3,7 +3,7 @@ const {
   Model
 } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
-  class Institution extends Model {
+  class Council extends Model {
     /**
      * Helper method for defining associations.
      * This method is not a part of Sequelize lifecycle.
@@ -11,40 +11,32 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      Institution.belongsTo(
+      Council.belongsTo(
         models.User,
         {
-          onDelete: "CASCADE",
-          foreignKey: 'owner_id',
-          as: 'Owner'
+          foreignKey: 'owner_id'
         }
       )
-      Institution.hasMany(
-        models.Enrollment,
+      Council.hasMany(
+        models.CouncilMember,
         {
-          onDelete: "CASCADE",
-          foreignKey: 'institution_id',
+          foreignKey: "council_id"
         }
       )
     }
   }
-  Institution.init({
-    name: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      validate: {
-        len: [1, 256]
-      }
-    },
+  Council.init({
+    name: DataTypes.STRING,
+    private: DataTypes.BOOLEAN,
     owner_id: {
       type: DataTypes.INTEGER,
       references: {
         model: 'Users'
       }
-    }
+    },
   }, {
     sequelize,
-    modelName: 'Institution',
+    modelName: 'Council',
   });
-  return Institution;
+  return Council;
 };

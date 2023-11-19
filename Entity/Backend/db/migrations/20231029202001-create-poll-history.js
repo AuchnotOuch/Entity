@@ -2,21 +2,28 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable('Enrollments', {
+    await queryInterface.createTable('PollHistories', {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      institution_id: {
+      poll_id: {
         type: Sequelize.INTEGER,
         references: {
-          model: 'Institutions',
+          model: 'Polls',
           key: 'id'
         }
       },
-      user_id: {
+      poll_option_id: {
+        type: Sequelize.INTEGER,
+        references: {
+          model: 'PollOptions',
+          key: 'id'
+        }
+      },
+      voter_id: {
         type: Sequelize.INTEGER,
         references: {
           model: 'Users',
@@ -36,6 +43,6 @@ module.exports = {
     });
   },
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable('Enrollments');
+    await queryInterface.dropTable('PollHistories');
   }
 };
