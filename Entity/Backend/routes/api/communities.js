@@ -1,5 +1,5 @@
 const express = require('express');
-const { Community } = require('../../db/models');  // Adjust the path to your Sequelize models directory if needed
+const { Community } = require('../../db/models');
 
 const router = express.Router();
 

@@ -1,5 +1,5 @@
 const express = require('express');
-const { Membership } = require('../../db/models');  // Adjust this if your path is different, hun!
+const { Membership } = require('../../db/models');
 
 const router = express.Router();
 
@@ -60,7 +60,7 @@ router.put('/:id', async (req, res) => {
     }
 });
 
-// DELETE method to strut away from a membership
+// DELETE method to remove a membership
 router.delete('/:id', async (req, res) => {
     try {
         const deleted = await Membership.destroy({
