@@ -3,7 +3,7 @@ const {
   Model
 } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
-  class PollOption extends Model {
+  class PollHistory extends Model {
     /**
      * Helper method for defining associations.
      * This method is not a part of Sequelize lifecycle.
@@ -11,32 +11,49 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      PollOption.belongsTo(
+      PollHistory.belongsTo(
         models.Poll,
         {
-          onDelete: 'CASCADE',
-          foreignKey: 'poll_id'
+          onDelete: "CASCADE",
+          foreignKey: "poll_id"
         }
       )
-      PollOption.hasMany(
-        models.PollHistory,
+      PollHistory.belongsTo(
+        models.PollOption,
         {
           foreignKey: "poll_option_id"
         }
       )
+      PollHistory.belongsTo(
+        models.User,
+        {
+          foreignKey: "voter_id"
+        }
+      )
     }
   }
-  PollOption.init({
-    option: DataTypes.STRING,
+  PollHistory.init({
     poll_id: {
       type: DataTypes.INTEGER,
       references: {
         model: 'Polls'
       }
     },
+    poll_option_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'PollOptions'
+      }
+    },
+    voter_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'Users'
+      }
+    },
   }, {
     sequelize,
-    modelName: 'PollOption',
+    modelName: 'PollHistory',
   });
-  return PollOption;
+  return PollHistory;
 };

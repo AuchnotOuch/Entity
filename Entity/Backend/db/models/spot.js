@@ -11,11 +11,35 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      Spot.belongsTo(
+        models.User,
+        {
+          onDelete: "CASCADE",
+          foreignKey: "user_id"
+        }
+      )
+      Spot.belongsTo(
+        models.Place,
+        {
+          onDelete: "CASCADE",
+          foreignKey: "place_id"
+        }
+      )
     }
   }
   Spot.init({
-    place_id: DataTypes.INTEGER,
-    user_id: DataTypes.INTEGER
+    place_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'Places'
+      }
+    },
+    user_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'Users'
+      }
+    }
   }, {
     sequelize,
     modelName: 'Spot',

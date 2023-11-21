@@ -11,11 +11,35 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      Poll.belongsTo(
+        models.User,
+        {
+          foreignKey: 'owner_id'
+        }
+      )
+      Poll.hasMany(
+        models.PollOption,
+        {
+          onDelete: 'CASCADE',
+          foreignKey: "poll_id"
+        }
+      )
+      Poll.hasMany(
+        models.PollHistory,
+        {
+          foreignKey: "poll_id"
+        }
+      )
     }
   }
   Poll.init({
     content: DataTypes.STRING,
-    owner_id: DataTypes.INTEGER
+    owner_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'Users'
+      }
+    }
   }, {
     sequelize,
     modelName: 'Poll',

@@ -11,11 +11,35 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      PrivateMessage.belongsTo(
+        models.User,
+        {
+          onDelete: "CASCADE",
+          foreignKey: "recipient_id"
+        }
+      )
+      PrivateMessage.belongsTo(
+        models.User,
+        {
+          onDelete: "CASCADE",
+          foreignKey: "owner_id"
+        }
+      )
     }
   }
   PrivateMessage.init({
-    recipient_id: DataTypes.INTEGER,
-    owner_id: DataTypes.INTEGER,
+    recipient_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'Users'
+      }
+    },
+    owner_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'Users'
+      }
+    },
     content: DataTypes.STRING
   }, {
     sequelize,

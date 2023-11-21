@@ -11,10 +11,28 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      Experience.hasMany(
+        models.Participant,
+        {
+          foreignKey: "experience_id"
+        }
+      )
+      Experience.belongsTo(
+        models.User,
+        {
+          foreignKey: "owner_id"
+        }
+      )
     }
   }
   Experience.init({
-    content: DataTypes.STRING
+    content: DataTypes.STRING,
+    owner_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'Users'
+      }
+    },
   }, {
     sequelize,
     modelName: 'Experience',

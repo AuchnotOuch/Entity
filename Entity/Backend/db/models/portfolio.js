@@ -11,11 +11,23 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      Portfolio.belongsTo(
+        models.User,
+        {
+          onDelete: "CASCADE",
+          foreignKey: 'owner_id'
+        }
+      )
     }
   }
   Portfolio.init({
     content: DataTypes.STRING,
-    owner_id: DataTypes.INTEGER
+    owner_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'Users'
+      }
+    },
   }, {
     sequelize,
     modelName: 'Portfolio',

@@ -11,11 +11,35 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      Student.belongsTo(
+        models.Classroom,
+        {
+          onDelete: 'CASCADE',
+          foreignKey: "classroom_id"
+        }
+      )
+      Student.belongsTo(
+        models.User,
+        {
+          onDelete: "CASCADE",
+          foreignKey: "user_id"
+        }
+      )
     }
   }
   Student.init({
-    classroom_id: DataTypes.INTEGER,
-    user_id: DataTypes.INTEGER
+    classroom_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'Classrooms'
+      }
+    },
+    user_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'Users'
+      }
+    }
   }, {
     sequelize,
     modelName: 'Student',

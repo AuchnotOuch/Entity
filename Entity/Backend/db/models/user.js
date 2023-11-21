@@ -53,6 +53,153 @@ module.exports = (sequelize, DataTypes) => {
         foreignKey: 'user_id_follower'
       }
       )
+      User.hasMany(
+        models.Chat,
+        {
+          onDelete: "CASCADE",
+          foreignKey: "owner_id"
+        }
+      )
+      User.hasMany(
+        models.ChatMessage,
+        {
+          onDelete: "CASCADE",
+          foreignKey: "user_id"
+        }
+      )
+      User.hasMany(
+        models.Classroom,
+        {
+          onDelete: "CASCADE",
+          foreignKey: "owner_id"
+        }
+      )
+      User.hasMany(
+        models.Comment,
+        {
+          onDelete: "CASCADE",
+          foreignKey: 'owner_id'
+        }
+      )
+      User.hasMany(
+        models.Council,
+        {
+          onDelete: "CASCADE",
+          foreignKey: 'owner_id'
+        }
+      )
+      User.hasMany(
+        models.CouncilMember,
+        {
+          onDelete: "CASCADE",
+          foreignKey: 'user_id'
+        }
+      )
+      User.hasMany(
+        models.Experience,
+        {
+          onDelete: "CASCADE",
+          foreignKey: 'owner_id'
+        }
+      )
+      User.hasMany(
+        models.Group,
+        {
+          onDelete: "CASCADE",
+          foreignKey: 'owner_id'
+        }
+      )
+      User.hasMany(
+        models.Institution,
+        {
+          onDelete: "CASCADE",
+          foreignKey: 'owner_id'
+        }
+      )
+      User.hasMany(
+        models.Like,
+        {
+          onDelete: "CASCADE",
+          foreignKey: 'owner_id'
+        }
+      )
+      User.hasMany(
+        models.Membership,
+        {
+          onDelete: "CASCADE",
+          foreignKey: 'user_id'
+        }
+      )
+      User.hasMany(
+        models.Participant,
+        {
+          onDelete: "CASCADE",
+          foreignKey: 'user_id'
+        }
+      )
+      User.hasMany(
+        models.Place,
+        {
+          onDelete: "CASCADE",
+          foreignKey: 'owner_id'
+        }
+      )
+      User.hasMany(
+        models.Poll,
+        {
+          onDelete: "CASCADE",
+          foreignKey: 'owner_id'
+        }
+      )
+      User.hasMany(
+        models.PollHistory,
+        {
+          onDelete: "CASCADE",
+          foreignKey: 'voter_id'
+        }
+      )
+      User.hasOne(
+        models.Portfolio,
+        {
+          onDelete: "CASCADE",
+          foreignKey: 'owner_id'
+        }
+      )
+      User.hasMany(
+        models.Post,
+        {
+          onDelete: "CASCADE",
+          foreignKey: 'owner_id'
+        }
+      )
+      User.hasMany(
+        models.PrivateMessage,
+        {
+          onDelete: "CASCADE",
+          foreignKey: 'owner_id'
+        }
+      )
+      User.hasMany(
+        models.PrivateMessage,
+        {
+          onDelete: "CASCADE",
+          foreignKey: 'recipient_id'
+        }
+      )
+      User.hasMany(
+        models.Spot,
+        {
+          onDelete: "CASCADE",
+          foreignKey: 'user_id'
+        }
+      )
+      User.hasMany(
+        models.Student,
+        {
+          onDelete: "CASCADE",
+          foreignKey: 'user_id'
+        }
+      )
     }
   };
 

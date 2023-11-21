@@ -11,12 +11,38 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      Post.hasMany(
+        models.Like,
+        {
+          onDelete: "CASCADE",
+          foreignKey: "post_id",
+        }
+      )
+      Post.belongsTo(
+        models.User,
+        {
+          onDelete: 'CASCADE',
+          foreignKey: "owner_id"
+        }
+      )
+      Post.hasMany(
+        models.Comment,
+        {
+          onDelete: "CASCADE",
+          foreignKey: "post_id"
+        }
+      )
     }
   }
   Post.init({
     content: DataTypes.STRING,
     post_type: DataTypes.STRING,
-    owner_id: DataTypes.INTEGER
+    owner_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'Users'
+      }
+    },
   }, {
     sequelize,
     modelName: 'Post',
