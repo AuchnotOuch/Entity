@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import './Nav.css'
@@ -6,7 +6,7 @@ import BottomNav from './BottonNav';
 import LeftNav from './LeftNav';
 import RightNav from './RightNav';
 
-function Nav() {
+function Nav({ setProfile, profile }) {
 
     return (
         <div className='container'>
@@ -17,7 +17,7 @@ function Nav() {
                 <BottomNav />
             </div>
             <div className='right-container'>
-                <RightNav />
+                <RightNav profile={profile} setProfile={setProfile} />
             </div>
         </div>
     )
