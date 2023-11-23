@@ -19,10 +19,38 @@ function Profile() {
                         <div className="user-info-container">
                             <div>Online Status:</div>
                             <div>Home Institution:</div>
+                            <div>Field of Study:</div>
+                            <div>Portfolio</div>
+                            <div>About Me:</div>
+                        </div>
+                        <div className="explore">
+                            <h3>Explore:</h3>
+                            <div className="explore-people">
+                                <img src="" onError={e => e.currentTarget.src = "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"}></img>
+                                <img src="" onError={e => e.currentTarget.src = "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"}></img>
+                                <img src="" onError={e => e.currentTarget.src = "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"}></img>
+                                <img src="" onError={e => e.currentTarget.src = "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"}></img>
+                            </div>
+                            <div className="explore-institutions">
+                                <img src="" onError={e => e.currentTarget.src = "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"}></img>
+                                <img src="" onError={e => e.currentTarget.src = "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"}></img>
+                                <img src="" onError={e => e.currentTarget.src = "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"}></img>
+                                <img src="" onError={e => e.currentTarget.src = "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"}></img>
+                            </div>
+                            <div className="explore-groups">
+                                <img src="" onError={e => e.currentTarget.src = "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"}></img>
+                                <img src="" onError={e => e.currentTarget.src = "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"}></img>
+                                <img src="" onError={e => e.currentTarget.src = "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"}></img>
+                                <img src="" onError={e => e.currentTarget.src = "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"}></img>
+                            </div>
                         </div>
                     </div>
                     <div className="main">
-
+                        <div className="profile-nav">
+                            <i className="fa-solid fa-scroll"></i>
+                            <i className="fa-regular fa-images"></i>
+                            <i class="fa-regular fa-folder-open"></i>
+                        </div>
                     </div>
                 </div>
             </div >

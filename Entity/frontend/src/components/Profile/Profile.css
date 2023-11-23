@@ -68,7 +68,27 @@ h3 {
 .user-info-container {
     display: flex;
     flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.341);
+    border-radius: 15px;
+    margin: 5px;
+    padding: 5px;
+}
 
+.explore {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.341);
+    border-radius: 15px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.explore-experiences>img,
+.explore-groups>img,
+.explore-institutions>img,
+.explore-people>img {
+    width: 70px;
+    height: 70px;
 }
 
 .main {
@@ -83,6 +103,18 @@ h3 {
 
 }
 
+.profile-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: xx-large;
+    color: white;
+    margin: 5px;
+}
+
+.profile-nav>i:hover {
+    border-bottom: 3px solid rgba(255, 255, 255, 0.341);
+}
 
 @keyframes aurora {
     0% {
