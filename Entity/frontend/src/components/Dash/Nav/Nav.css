@@ -40,6 +40,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: .2s all linear;
 }
 
 .right-nav-container {
@@ -60,7 +61,7 @@
     position: absolute;
     bottom: 30px;
     font-size: xx-large;
-    color: rgb(85, 85, 85);
+    color: rgba(255, 255, 255, 0.341);
 }
 
 #left-nav-button {
@@ -70,7 +71,7 @@
     left: 30px;
     bottom: 50%;
     font-size: xx-large;
-    color: rgb(85, 85, 85);
+    color: rgba(255, 255, 255, 0.341);
     cursor: pointer;
 }
 
@@ -81,14 +82,14 @@
     right: 30px;
     bottom: 50%;
     font-size: xx-large;
-    color: rgb(85, 85, 85);
+    color: rgba(255, 255, 255, 0.341);
     cursor: pointer;
 }
 
 button {
     background: none;
     border: none;
-    color: rgb(85, 85, 85);
+    color: rgba(255, 255, 255, 0.341);
     font-size: xx-large;
     cursor: pointer;
 }

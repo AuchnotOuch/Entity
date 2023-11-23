@@ -12,9 +12,11 @@ function LeftNav() {
             <button id='left-nav-button' style={{ transform: rotate, transition: "all 0.2s linear" }} onClick={toggleLeftNav}><i className="fa-solid fa-chevron-right"></i></button>
             {leftNav &&
                 <div className="left-nav-container">
-                    <button><img src="/images/planet.svg"></img></button>
-                    <button><img src="/images/solar-system.svg"></img></button>
-                    <button><img src="/images/galaxy.svg"></img></button>
+                    <button><i className="fa-solid fa-building-columns"></i></button>
+                    <button><i className="fa-solid fa-chalkboard-user"></i></button>
+                    <button><i className="fa-solid fa-people-group"></i></button>
+                    <button><i className="fa-solid fa-location-pin"></i></button>
+                    <button><i className="fa-solid fa-user-astronaut"></i></button>
                 </div>
             }
         </>

@@ -20,11 +20,15 @@ if (process.env.NODE_ENV !== 'production') {
 
 function Root() {
   return (
-    <ReduxProvider store={store}>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
-    </ReduxProvider>
+    <div className='aurora-outer'>
+      <div className='aurora-inner'>
+        <ReduxProvider store={store}>
+          <BrowserRouter>
+            <App />
+          </BrowserRouter>
+        </ReduxProvider>
+      </div>
+    </div>
   );
 }
 
