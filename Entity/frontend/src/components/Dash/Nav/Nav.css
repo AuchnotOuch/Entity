@@ -1,0 +1,100 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bottom-container {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-nav-container {
+    /* border: 1px solid red; */
+    width: 500px;
+    height: 100px;
+    position: absolute;
+    bottom: 75px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-nav-container {
+    width: 100px;
+    height: 350px;
+    position: absolute;
+    /* border: 1px solid red; */
+    top: 25%;
+    left: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: .2s all linear;
+}
+
+.right-nav-container {
+    width: 100px;
+    height: 350px;
+    position: absolute;
+    /* border: 1px solid red; */
+    top: 25%;
+    right: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#bottom-nav-button {
+    background: none;
+    border: none;
+    position: absolute;
+    bottom: 30px;
+    font-size: xx-large;
+    color: rgba(255, 255, 255, 0.341);
+}
+
+#left-nav-button {
+    background: none;
+    border: none;
+    position: absolute;
+    left: 30px;
+    bottom: 50%;
+    font-size: xx-large;
+    color: rgba(255, 255, 255, 0.341);
+    cursor: pointer;
+}
+
+#right-nav-button {
+    background: none;
+    border: none;
+    position: absolute;
+    right: 30px;
+    bottom: 50%;
+    font-size: xx-large;
+    color: rgba(255, 255, 255, 0.341);
+    cursor: pointer;
+}
+
+button {
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.341);
+    font-size: xx-large;
+    cursor: pointer;
+}
+
+button>img {
+    width: 75px;
+    height: 75px;
+}
