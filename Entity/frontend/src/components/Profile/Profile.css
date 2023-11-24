@@ -40,7 +40,7 @@
 .name-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     color: rgb(255, 255, 255);
     margin-bottom: 5px;
 }
@@ -112,8 +112,31 @@ h3 {
     margin: 5px;
 }
 
-.profile-nav>i:hover {
-    border-bottom: 3px solid rgba(255, 255, 255, 0.341);
+.profile-nav>button {
+    color: white;
+}
+
+.profile-nav>button:hover {
+    color: rgba(255, 255, 255, 0.431)
+}
+
+.interact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.341);
+    border-radius: 15px;
+    margin: 5px;
+    font-size: xx-large;
+}
+
+.interact-container>button {
+    color: white
+}
+
+.interact-container>button:hover {
+    color: rgba(255, 255, 255, 0.341);
+
 }
 
 @keyframes aurora {

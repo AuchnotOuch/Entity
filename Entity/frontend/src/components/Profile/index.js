@@ -23,6 +23,11 @@ function Profile() {
                             <div>Portfolio</div>
                             <div>About Me:</div>
                         </div>
+                        <div className="interact-container">
+                            <button><i className="fa-solid fa-plus"></i></button>
+                            <button><i className="fa-regular fa-envelope"></i></button>
+                            <button><i className="fa-regular fa-heart"></i></button>
+                        </div>
                         <div className="explore">
                             <h3>Explore:</h3>
                             <div className="explore-people">
@@ -47,9 +52,9 @@ function Profile() {
                     </div>
                     <div className="main">
                         <div className="profile-nav">
-                            <i className="fa-solid fa-scroll"></i>
-                            <i className="fa-regular fa-images"></i>
-                            <i class="fa-regular fa-folder-open"></i>
+                            <button><i className="fa-solid fa-scroll"></i></button>
+                            <button><i className="fa-regular fa-images"></i></button>
+                            <button><i className="fa-regular fa-folder-open"></i></button>
                         </div>
                     </div>
                 </div>
